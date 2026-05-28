@@ -357,7 +357,125 @@ a{
 
     color: #ddd;
 }
+/* 🔸 VIDEOS */
 
+.video-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+.video-card{
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+
+    transition: 0.4s;
+
+    background: #000;
+}
+
+.video-card:hover{
+    transform: translateY(-8px);
+}
+
+.video-card video{
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    aspect-ratio: 9/16;
+}
+/* 🔸 TITULO VIDEOS */
+
+.video-section .section-title{
+    margin-bottom: 70px;
+
+    text-align: center;
+}
+
+.video-section .section-title span{
+    color: #c59d5f;
+
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+}
+
+/* linea decorativa arriba */
+
+.video-section .section-title span::before,
+.video-section .section-title span::after{
+    content: "";
+
+    width: 40px;
+
+    height: 1px;
+
+    background: #c59d5f;
+
+    position: absolute;
+
+    top: 50%;
+}
+
+.video-section .section-title span::before{
+    left: -55px;
+}
+
+.video-section .section-title span::after{
+    right: -55px;
+}
+
+.video-section .section-title h2{
+    font-size: 52px;
+
+    color: #fff;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-family: "Playfair Display", serif;
+
+    text-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* linea inferior */
+
+.video-section .section-line{
+    width: 120px;
+
+    height: 2px;
+
+    background: linear-gradient(to right, transparent, #c59d5f, transparent);
+
+    margin: 25px auto 0;
+}
 /* 🔸 GALERIA */
 
 .about-gallery{
